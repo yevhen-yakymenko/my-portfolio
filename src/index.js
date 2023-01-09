@@ -10,7 +10,7 @@ import { theme } from './theme';
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter basename="/my-portfolio">
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
