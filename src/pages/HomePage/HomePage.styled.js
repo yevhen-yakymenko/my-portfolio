@@ -69,24 +69,32 @@ export const ContentBox = styled.div`
       font-size: 2.75rem;
     }
   }
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: ${p => p.theme.fontSizes[4]};
+  line-height: 1.5;
+
+  @media screen and (min-width: ${p =>
+      p.theme.breakpoints[0]}) and (max-width: calc(${p =>
+      p.theme.breakpoints[2]} - 0.6px)) {
+    font-size: ${p => p.theme.fontSizes[5]};
+  }
 
   & > p {
-    font-size: ${p => p.theme.fontSizes[4]};
-    line-height: 1.5;
     text-align: justify;
-
-    @media screen and (min-width: ${p =>
-        p.theme.breakpoints[0]}) and (max-width: calc(${p =>
-        p.theme.breakpoints[2]} - 0.6px)) {
-      font-size: ${p => p.theme.fontSizes[5]};
-    }
   }
 `;
 
 export const ReadMoreLink = styled(NavLink)`
-  display: block;
-  text-align: right;
-  color: ${p => p.theme.colors.textSecondary}; ;
+  align-self: flex-end;
+  color: ${p => p.theme.colors.textSecondary};
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const ContentLink = styled.a`
