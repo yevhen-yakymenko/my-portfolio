@@ -60,16 +60,27 @@ export const GlobalStyle = createGlobalStyle`
   .section-wrapper {
     flex: 1 1 100%;
     margin-top: ${p => valueToRem(p.headerHeight)};
-    padding-top: ${p => p.theme.space[4]};
-    padding-bottom: ${p => p.theme.space[4]};
+    padding-top: ${p => p.theme.space[3]};
+    padding-bottom: ${p => p.theme.space[3]};
+
+    @media screen and (min-width: ${p => p.theme.breakpoints[1]}){
+      padding-top: ${p => p.theme.space[4]};
+      padding-bottom: ${p => p.theme.space[4]};
+    }
   }
 
   .container {
     max-width: ${p => p.theme.sizes.container}px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: ${p => p.theme.space[4]};
-    padding-right: ${p => p.theme.space[4]};
+    padding-left: ${p => p.theme.space[3]};
+    padding-right: ${p => p.theme.space[3]};
+
+
+    @media screen and (min-width: ${p => p.theme.breakpoints[0]}){
+      padding-left: ${p => p.theme.space[4]};
+      padding-right: ${p => p.theme.space[4]};
+    }
   }
 
   .page-title {
@@ -82,7 +93,7 @@ export const GlobalStyle = createGlobalStyle`
   };
 
   .nav-bloc {
-    @media screen and (max-width: calc(${p => p.theme.breakpoints[0]} - 0.6px)){
+    @media screen and (max-width: calc(${p => p.theme.breakpoints[1]} - 0.6px)){
       top: ${p => valueToRem(p.headerHeight)};
     }
   }

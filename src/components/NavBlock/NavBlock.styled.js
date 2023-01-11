@@ -9,18 +9,15 @@ export const NavWrapper = styled.div.attrs(_ => ({
     transform: translateX(100%);
   }
 
-  @media screen and (max-width: calc(${p => p.theme.breakpoints[0]} - 0.6px)) {
+  @media screen and (max-width: calc(${p => p.theme.breakpoints[1]} - 0.6px)) {
     position: fixed;
     left: -100%;
     padding-top: ${p => p.theme.space[4]};
     padding-bottom: ${p => p.theme.space[4]};
-    padding-left: ${p => p.theme.space[2]};
-    padding-right: ${p => p.theme.space[2]};
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: ${p => p.theme.space[3]};
+    padding-left: ${p => p.theme.space[3]};
+    padding-right: ${p => p.theme.space[3]};
+    width: 100vw;
+    height: 100vh;
 
     background-color: ${p => p.theme.colors.backgroundPrimary};
     border-bottom: 2px solid ${p => p.theme.colors.textSecondary};
@@ -32,10 +29,10 @@ export const NavWrapper = styled.div.attrs(_ => ({
     transition: transform ${p => p.theme.transitions.main};
   }
 
-  @media screen and (min-width: ${p => p.theme.breakpoints[0]}) {
+  @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
     flex: 1 1;
     flex-wrap: wrap;
-    gap: ${p => p.theme.space[2]};
+    gap: ${p => p.theme.space[3]};
   }
 
   @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {

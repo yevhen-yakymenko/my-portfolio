@@ -2,16 +2,14 @@ import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import AppBar from 'components/AppBar';
-// import LogoLink from 'components/LogoLink/';
 import NavBlock from 'components/NavBlock';
 import MainNavList from 'components/MainNavList';
+import Footer from 'components/Footer';
 
 const Layout = ({ getHeight }) => {
   return (
     <>
       <AppBar getHeight={getHeight}>
-        {/* <LogoLink to={'/'} title="Home" /> */}
-
         <NavBlock>
           <MainNavList id="MainNavList" />
         </NavBlock>
@@ -21,7 +19,7 @@ const Layout = ({ getHeight }) => {
           <Outlet />
         </Suspense>
       </main>
-      <footer>Foter</footer>
+      <Footer />
     </>
   );
 };

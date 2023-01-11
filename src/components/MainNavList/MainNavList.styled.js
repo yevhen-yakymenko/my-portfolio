@@ -1,21 +1,35 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-// import { valueToRem } from 'utils/mixins';
-
 export const NavList = styled.ul`
-  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: ${p => p.theme.space[4]};
+
+  @media screen and (max-width: calc(${p => p.theme.breakpoints[1]} - 0.6px)) {
+    flex-direction: column;
+    width: 100%;
+
+    & > li {
+      border-bottom: 1px solid #e0e0e0;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: calc(${p => p.theme.breakpoints[1]} - 0.6px)) {
+    margin-left: auto;
+    gap: ${p => p.theme.space[4]};
+  }
+
+  @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
+    margin-left: auto;
+    gap: ${p => p.theme.space[5]};
+  }
 `;
 
 export const StyledLink = styled(NavLink)`
   display: block;
   padding-top: ${p => p.theme.space[3]};
   padding-bottom: ${p => p.theme.space[3]};
-
-  position: relative;
 
   font-weight: ${p => p.theme.fontWeights.medium};
   font-size: ${p => p.theme.fontSizes[5]};
@@ -24,7 +38,20 @@ export const StyledLink = styled(NavLink)`
 
   transition: color ${p => p.theme.transitions.main};
 
-  &::after {
+  @media screen and (max-width: calc(${p => p.theme.breakpoints[1]} - 0.6px)) {
+    text-align: center;
+    width: 100%;
+  }
+
+  & > span {
+    position: relative;
+    @media screen and (max-width: calc(${p =>
+        p.theme.breakpoints[1]} - 0.6px)) {
+      display: inline-flex;
+    }
+  }
+
+  & > span::after {
     position: absolute;
 
     display: block;
@@ -40,12 +67,17 @@ export const StyledLink = styled(NavLink)`
     transform: scaleX(0);
 
     transition: transform ${p => p.theme.transitions.main};
+
+    @media screen and (max-width: calc(${p =>
+        p.theme.breakpoints[1]} - 0.6px)) {
+      bottom: 0;
+    }
   }
 
   &.active {
     color: ${p => p.theme.colors.textAccent};
 
-    &::after {
+    & > span::after {
       transform: scaleX(1);
     }
   }

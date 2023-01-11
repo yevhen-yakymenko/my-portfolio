@@ -19,7 +19,7 @@ export const BurgerBtn = styled.button`
     color: ${p => p.theme.colors.textLight};
   }
 
-  @media screen and (min-width: ${p => p.theme.breakpoints[0]}) {
+  @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
     display: none;
   }
 `;

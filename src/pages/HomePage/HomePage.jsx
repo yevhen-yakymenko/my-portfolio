@@ -3,7 +3,9 @@ import img from 'images/1x3.jpg';
 import {
   HomePageSection,
   StyledContainer,
+  AboutBlock,
   ContentBox,
+  ReadMoreLink,
   ContentLink,
   MediaBox,
   ImgWrapper,
@@ -13,28 +15,40 @@ const HomePage = () => {
   return (
     <HomePageSection>
       <StyledContainer>
-        <ContentBox>
-          <h1>
-            Hi, I am Yevhen,
-            <br />
-            Frontend Developer
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            corrupti cumque ut! Sapiente placeat eveniet optio eum velit iste
-            nulla! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Iusto, porro?
-          </p>
-          <p>Read more</p>
-          <ContentLink to={'login'} aria-label="link to log in page">
-            Download Resume
-          </ContentLink>
-        </ContentBox>
-        <MediaBox>
-          <ImgWrapper>
-            <img src={img} alt="img" width="400px" />
-          </ImgWrapper>
-        </MediaBox>
+        <AboutBlock>
+          <ContentBox>
+            <h1>
+              Hi, I am Yevhen,
+              <br />
+              Front-end Developer
+            </h1>
+            <p>
+              I focus on HTML5, CSS3, JS, React. Development, practice and work
+              for the result are important for me. I am skillful in analyzing
+              problems and thinking of solutions to accurately troubleshoot and
+              solve technical problems. <br />{' '}
+              <ReadMoreLink
+                to={'about'}
+                aria-label="link to information about me"
+              >
+                Read more
+              </ReadMoreLink>
+            </p>
+
+            <ContentLink
+              href="https://drive.google.com/file/d/1p12Q_uOoU2xJmRsASH6aLukazPNwck71/view?usp=sharing"
+              target="blank"
+              aria-label="link to download my resume"
+            >
+              Download Resume
+            </ContentLink>
+          </ContentBox>
+          <MediaBox>
+            <ImgWrapper>
+              <img src={img} alt="I" width="400px" />
+            </ImgWrapper>
+          </MediaBox>
+        </AboutBlock>
       </StyledContainer>
     </HomePageSection>
   );

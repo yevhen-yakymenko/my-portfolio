@@ -5,22 +5,22 @@ const MainNavList = () => {
     <NavList>
       <li>
         <StyledLink to={'/'} title="Home">
-          Home
+          <span>Home</span>
         </StyledLink>
       </li>
       <li>
         <StyledLink to={'about'} title="About">
-          About
+          <span>About</span>
         </StyledLink>
       </li>
       <li>
         <StyledLink to={'works'} title="Works">
-          Works
+          <span>Works</span>
         </StyledLink>
       </li>
       <li>
         <StyledLink to={'contacts'} title="Contacts">
-          Contacts
+          <span>Contacts</span>
         </StyledLink>
       </li>
     </NavList>
