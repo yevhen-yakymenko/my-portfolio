@@ -40,7 +40,8 @@ const HomePage = () => {
 
             <ContentLink
               href="https://drive.google.com/file/d/1p12Q_uOoU2xJmRsASH6aLukazPNwck71/view?usp=sharing"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="link to download my resume"
             >
               Download Resume
