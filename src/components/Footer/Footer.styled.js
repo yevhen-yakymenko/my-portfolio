@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MainFooter = styled.div`
+export const MainFooter = styled.footer`
   color: ${p => p.theme.colors.textWhite};
   background-color: #222222;
 `;

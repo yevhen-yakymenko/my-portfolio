@@ -1,4 +1,4 @@
-import img from 'images/1x3.jpg';
+// import img from 'images/1x3.jpg';
 
 import {
   HomePageSection,
@@ -25,10 +25,16 @@ const HomePage = () => {
             </h1>
             <TextWrapper>
               <p>
-                I focus on HTML5, CSS3, JS, React. Development, practice and
-                work for the result are important for me. I am skillful in
-                analyzing problems and thinking of solutions to accurately
-                troubleshoot and solve technical problems.
+                My skills are:
+                <br />
+                GIT, HTML5, CSS3, SASS, REST API, JavaScript, React, React
+                Hooks, React Router, Redux, Styled Components.
+                <br />
+                Development, practice and work for the result are important for
+                me.
+                <br />I am skillful in analyzing problems and thinking of
+                solutions to accurately troubleshoot and solve technical
+                problems.
               </p>
               <ReadMoreLink
                 to={'about'}
@@ -49,7 +55,11 @@ const HomePage = () => {
           </ContentBox>
           <MediaBox>
             <ImgWrapper>
-              <img src={img} alt="I" width="400px" />
+              <img
+                src="https://res.cloudinary.com/djjgaui2x/image/upload/v1674159865/1x3_euzh9w.jpg"
+                alt="I"
+                width="400px"
+              />
             </ImgWrapper>
           </MediaBox>
         </AboutBlock>

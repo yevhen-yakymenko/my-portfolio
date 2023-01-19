@@ -43,7 +43,9 @@ const NavBlock = ({ children }) => {
         showMenu={toggleMenu}
         ref={Burger}
       />
-      <NavWrapper ref={NavBox}>{children}</NavWrapper>
+      <NavWrapper as="nav" ref={NavBox}>
+        {children}
+      </NavWrapper>
     </>
   );
 };

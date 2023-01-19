@@ -1,0 +1,38 @@
+[
+  {
+    "id": "about",
+    "title": "Who am I?",
+    "text": "Hello, my name is Yevhen Yakymenko. I am 33 years old. I live in Ukraine.I was born in Kherson, where I lived until 2022. In 2022, because of the war, I was forced to move to Kyiv. One  day I realized that I needed to change something in my life, namely change my profession and do something radically  different.Therefore, having a great desire to learn something  new and develop, I signed up for courses at an IT school. This  is how my path in Web Development began.",
+    "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159787/1_400_zumhy4.jpg"
+  },
+  {
+    "id": "education-work",
+    "title": "Education and work experience",
+    "text": "<p>In general, I have a higher engineering education, a master's  degree in the specialty: \"Industrial and civil construction\". But I did not work for a long time in my profession. My previous place of work was SKL Shipping Agency, LLC. Worked as forwarding agent / customs broker from 01.01.2015 until 24.02.2022.</p>",
+    "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159787/2_400_awrtwf.jpg"
+  },
+  {
+    "id": "studying",
+    "title": "Studying at an IT school and my skills",
+    "text": "So, in 2021 I completed a course at the GoIT school in the direction Full Stack developer. This school gave me the basic knowledge and skills for successful work in Web Development. During my studies, I participated in student team projects, which gave me a deep understanding of web development and the processes that take place there. At the moment, I have the following basic skills: GIT, HTML5, CSS3, SASS, Rest API, Java Script, React, React Hooks, React Router, Redux, Styled Components.",
+    "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159786/3_400_sk3s1l.jpg"
+  },
+  {
+    "id": "qualities",
+    "title": "My qualities",
+    "text": "I possess many of the qualities required to be a front-end software engineer. Responsibility, hard work, an analytical mindset, diligence, perseverance and ability to self-organize, perform routine tasks and work remotely belong to my personal strengths. I have a logical mindset, which makes me a great performer. I am also good at learning, working with people and finding compromises. At work, I am fully capable of immersing myself in tasks.",
+    "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159787/1_400_zumhy4.jpg"
+  },
+  {
+    "id": "hobbies",
+    "title": "Hobbies and recreation",
+    "text": "By nature, I am a kind, non-conflictual person. I like to travel, eat delicious food and active recreation in nature. I don't have bad habits. I don't drink alcohol and I don't smoke. I like to spend my free time with my family, my beloved wife and my little son. I also really like to make something from wood and metal. I have many different tools for this. In this, I am a jack of all trades.",
+    "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159787/5_400_cyhb8p.jpg"
+  },
+  {
+    "id": "final-word",
+    "title": "Final word",
+    "text": "In conclusion, I would like to wish you inspiration, development and fulfillment of your most cherished dreams. Thank you for reading to the end. All the best to you.",
+    "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159787/5_400_cyhb8p.jpg"
+  }
+]
