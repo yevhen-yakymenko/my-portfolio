@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Image finder",
+    "description": "This is small application to search and view images by keyword. For HTTP-request is used public Pixabay API. There is form for searching.",
+    "stack": [
+      "HTML",
+      "CSS",
+      "React",
+      "React Hooks",
+      "Axios",
+      "Styled Components"
+    ],
+    "preview": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674231925/my-portfolio/works/1_image-finder_600_zioa9j.png",
+    "links": {
+      "site": "https://yevhen-yakymenko.github.io/image-finder/",
+      "repo": "https://github.com/yevhen-yakymenko/image-finder"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Movies",
+    "description": "App for watching popular and searching films. The application uses themoviedb.org API.",
+    "stack": [
+      "HTML",
+      "CSS",
+      "React",
+      "React Hooks",
+      "React Routers",
+      "Axios",
+      "Styled Components"
+    ],
+    "preview": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674231922/my-portfolio/works/2_movie-spa_600_yfb3yr.png",
+    "links": {
+      "site": "https://yevhen-yakymenko.github.io/movies/",
+      "repo": "https://github.com/yevhen-yakymenko/movies"
+    }
+  },
+  {
+    "id": 3,
+    "title": "PhoneBook",
+    "description": "A simple phonebook connected to Swagger backend API - you can register, log in, add, remove or filter contacts, log out.",
+    "stack": [
+      "HTML",
+      "CSS",
+      "React",
+      "React Hooks",
+      "React Routers",
+      "Redux",
+      "Styled Components"
+    ],
+    "preview": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674231907/my-portfolio/works/3_phonebook-spa_600_zld2hn.png",
+    "links": {
+      "site": "https://yevhen-yakymenko.github.io/phonebook/",
+      "repo": "https://github.com/yevhen-yakymenko/phonebook"
+    }
+  }
+]

@@ -18,8 +18,8 @@ export const StyledContainer = styled.div.attrs(props => ({
 //   height: 50%;
 //   position: fixed;
 
-//   padding-top: 16px;
-//   padding-bottom: 16px;
+//   padding-top: ${p => p.theme.space[3]};
+//   padding-bottom: ${p => p.theme.space[3]};
 //   padding-left: 8px;
 //   padding-right: 8px;
 
@@ -35,55 +35,55 @@ export const StyledContainer = styled.div.attrs(props => ({
 // `;
 
 export const AboutBlock = styled.div`
-  padding: 16px;
+  padding: ${p => p.theme.space[3]};
 
-  border-radius: 8px;
+  border-radius: ${p => p.theme.radii[0]};
 
   background-color: ${p => p.theme.colors.backgroundPrimary};
   box-shadow: 0rem 0.25rem 0.625rem rgba(187, 225, 250, 0.25);
 
   @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
-    padding: 32px;
+    padding: ${p => p.theme.space[4]};
   }
 
   & > h1 {
-    margin-bottom: 16px;
-    font-size: 24px;
+    margin-bottom: ${p => p.theme.space[3]};
+    font-size: ${p => p.theme.fontSizes[6]};
     line-height: 1.36;
 
     @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
-      margin-bottom: 32px;
-      font-size: 32px;
+      margin-bottom: ${p => p.theme.space[4]};
+      font-size: ${p => p.theme.fontSizes[7]};
     }
 
     @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-      margin-left: 32px;
-      font-size: 48px;
+      margin-left: ${p => p.theme.space[4]};
+      font-size: ${p => p.theme.fontSizes[8]};
     }
   }
 `;
 
 export const AboutList = styled.ul`
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: ${p => p.theme.space[3]};
+  margin-bottom: ${p => p.theme.space[3]};
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: ${p => p.theme.space[3]};
 
   @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
-    gap: 32px;
+    gap: ${p => p.theme.space[4]};
   }
 
   & > li {
-    padding-bottom: 16px;
+    padding-bottom: ${p => p.theme.space[3]};
 
     border-bottom: 0.0625rem solid #e0e0e0;
 
     @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
-      padding-bottom: 32px;
+      padding-bottom: ${p => p.theme.space[4]};
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: ${p => p.theme.space[4]};
 
       &:nth-child(2n) {
         flex-direction: row-reverse;
@@ -91,8 +91,8 @@ export const AboutList = styled.ul`
     }
 
     @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-      padding-left: 32px;
-      padding-right: 32px;
+      padding-left: ${p => p.theme.space[4]};
+      padding-right: ${p => p.theme.space[4]};
     }
   }
 `;
@@ -105,17 +105,17 @@ export const TextBox = styled.div`
   }
 
   & > h2 {
-    margin-bottom: 16px;
+    margin-bottom: ${p => p.theme.space[3]};
 
-    font-size: 20px;
+    font-size: ${p => p.theme.fontSizes[5]};
     line-height: 1.5;
 
     @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
-      font-size: 24px;
+      font-size: ${p => p.theme.fontSizes[6]};
     }
 
     @media screen and (min-width: ${p => p.theme.breakpoints[2]}) {
-      font-size: 32px;
+      font-size: ${p => p.theme.fontSizes[7]};
     }
   }
 
@@ -138,7 +138,11 @@ export const ImgBox = styled.div`
     margin: 0 auto;
     max-width: max-content;
     border: 0.0625rem solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: ${p => p.theme.radii[0]};
     overflow: hidden;
+
+    & > img {
+      min-height: 8.125rem;
+    }
   }
 `;

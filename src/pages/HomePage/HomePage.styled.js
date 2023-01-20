@@ -141,14 +141,19 @@ export const MediaBox = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
+  min-height: 400px;
+
+  border: 0.0625rem solid #e0e0e0;
   border-radius: 50%;
   overflow: hidden;
 
   @media screen and (max-width: calc(${p => p.theme.breakpoints[0]} - 0.6px)) {
     width: 200px;
+    min-height: 200px;
   }
 
   @media screen and (max-width: calc(${p => p.theme.breakpoints[1]} - 0.6px)) {
     width: 300px;
+    min-height: 300px;
   }
 `;

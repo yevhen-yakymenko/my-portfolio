@@ -52,7 +52,7 @@ const About = () => {
               <li key={id} id={id}>
                 <TextBox>
                   <h2>{title}</h2>
-                  <p>{text}</p>
+                  <p dangerouslySetInnerHTML={{ __html: text }} />
                 </TextBox>
                 <ImgBox>
                   <div>

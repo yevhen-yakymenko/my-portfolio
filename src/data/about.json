@@ -2,19 +2,19 @@
   {
     "id": "about",
     "title": "Who am I?",
-    "text": "Hello, my name is Yevhen Yakymenko. I am 33 years old. I live in Ukraine.I was born in Kherson, where I lived until 2022. In 2022, because of the war, I was forced to move to Kyiv. One  day I realized that I needed to change something in my life, namely change my profession and do something radically  different.Therefore, having a great desire to learn something  new and develop, I signed up for courses at an IT school. This  is how my path in Web Development began.",
+    "text": "Hello, my name is Yevhen Yakymenko. I am 33 years old. I live in Ukraine. I was born in Kherson, where I lived until 2022. In 2022, because of the war, I was forced to move to Kyiv.<br />One day I realized that I needed to change something in my life, namely change my profession and do something radically different. Therefore, having a great desire to learn something  new and develop, I signed up for courses at an IT school. This is how my path in Web Development began.",
     "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159787/my-portfolio/about/1_400_zumhy4.jpg"
   },
   {
     "id": "education-work",
     "title": "Education and work experience",
-    "text": "<p>In general, I have a higher engineering education, a master's  degree in the specialty: \"Industrial and civil construction\". But I did not work for a long time in my profession. My previous place of work was SKL Shipping Agency, LLC. Worked as forwarding agent / customs broker from 01.01.2015 until 24.02.2022.</p>",
+    "text": "In general, I have a higher engineering education, a master's degree in the specialty: \"Industrial and civil construction\". But I did not work for a long time in my profession.<br />My previous place of work was SKL Shipping Agency, LLC. Worked as forwarding agent / customs broker from 01.01.2015 until 24.02.2022.",
     "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159787/my-portfolio/about/2_400_awrtwf.jpg"
   },
   {
     "id": "studying",
     "title": "Studying at an IT school and my skills",
-    "text": "So, in 2021 I completed a course at the GoIT school in the direction Full Stack developer. This school gave me the basic knowledge and skills for successful work in Web Development. During my studies, I participated in student team projects, which gave me a deep understanding of web development and the processes that take place there. At the moment, I have the following basic skills: GIT, HTML5, CSS3, SASS, Rest API, Java Script, React, React Hooks, React Router, Redux, Styled Components.",
+    "text": "So, in 2021 I completed a course at the GoIT school in the direction Full Stack developer. This school gave me the basic knowledge and skills for successful work in Web Development. During my studies, I participated in student team projects, which gave me a deep understanding of web development and the processes that take place there.<br />At the moment, I have the following basic skills: GIT, HTML5, CSS3, SASS, Rest API, Java Script, React, React Hooks, React Router, Redux, Styled Components.",
     "img": "https://res.cloudinary.com/djjgaui2x/image/upload/v1674159786/my-portfolio/about/3_400_sk3s1l.jpg"
   },
   {
