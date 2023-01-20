@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/643.b86d553f.chunk.js","mappings":"2KAMA,EAJc,WACZ,OAAO,yBAAK,SACd,C","sources":["pages/Works/Works.jsx"],"sourcesContent":["import React from 'react';\n\nconst Works = () => {\n  return <div>Works</div>;\n};\n\nexport default Works;\n"],"names":[],"sourceRoot":""}
