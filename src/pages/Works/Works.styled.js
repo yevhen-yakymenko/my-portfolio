@@ -130,7 +130,7 @@ export const LinksList = styled.div`
     transition: color ${p => p.theme.transitions.main};
 
     &:hover {
-      color: #ff6464;
+      color: ${p => p.theme.colors.textAccent};
     }
 
     & > span {

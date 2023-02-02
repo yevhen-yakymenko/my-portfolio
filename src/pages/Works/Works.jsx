@@ -24,7 +24,7 @@ const Works = () => {
             <WorksItem key={id}>
               <ImgBox>
                 <a href={links.site} target="_blank" rel="noopener noreferrer">
-                  <img src={preview} alt={title} width="450px" />
+                  <img src={preview} alt={title} width="450px" loading="lazy" />
                 </a>
               </ImgBox>
               <TextBox>
@@ -37,7 +37,7 @@ const Works = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>
+                    <span aria-label="link to work page">
                       <IoGlobeOutline />
                     </span>
                   </a>

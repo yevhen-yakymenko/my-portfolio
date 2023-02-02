@@ -8,7 +8,7 @@ import { GlobalStyle } from './GlobalStyle';
 const HomePage = lazy(() => import('../pages/HomePage'));
 const About = lazy(() => import('../pages/About'));
 const Works = lazy(() => import('../pages/Works'));
-const Contacts = lazy(() => import('../pages/Contacts'));
+const Contact = lazy(() => import('../pages/Contact'));
 
 export const App = () => {
   // ------------------------------------------------
@@ -28,7 +28,7 @@ export const App = () => {
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="works" element={<Works />} />
-          <Route path="contacts" element={<Contacts />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<div>Not Found</div>} />
         </Route>
       </Routes>

@@ -19,8 +19,8 @@ const MainNavList = () => {
         </StyledLink>
       </li>
       <li>
-        <StyledLink to={'contacts'} title="Contacts">
-          <span>Contacts</span>
+        <StyledLink to={'contact'} title="Contact">
+          <span>Contact</span>
         </StyledLink>
       </li>
     </NavList>

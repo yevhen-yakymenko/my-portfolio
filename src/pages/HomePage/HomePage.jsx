@@ -45,7 +45,7 @@ const HomePage = () => {
             </TextWrapper>
 
             <ContentLink
-              href="https://drive.google.com/file/d/1p12Q_uOoU2xJmRsASH6aLukazPNwck71/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lkFtBhac7dxC3HFfwzwTOUgLHCUDCT-g/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="link to download my resume"
@@ -59,6 +59,7 @@ const HomePage = () => {
                 src="https://res.cloudinary.com/djjgaui2x/image/upload/v1674159865/my-portfolio/home-page/1x3_euzh9w.jpg"
                 alt="I"
                 width="400px"
+                loading="lazy"
               />
             </ImgWrapper>
           </MediaBox>

@@ -43,20 +43,17 @@ const About = () => {
           </LinksList>
         </NavBlock> */}
         <AboutBlock>
-          <h1>
-            A little about myself <br />
-            and how I became a web developer
-          </h1>
+          <h1>About me</h1>
           <AboutList>
             {about.map(({ id, title, text, img }) => (
               <li key={id} id={id}>
                 <TextBox>
-                  <h2>{title}</h2>
+                  {/* <h2>{title}</h2> */}
                   <p dangerouslySetInnerHTML={{ __html: text }} />
                 </TextBox>
                 <ImgBox>
                   <div>
-                    <img src={img} alt={id} width="240px" />
+                    <img src={img} alt={id} width="300px" loading="lazy" />
                   </div>
                 </ImgBox>
               </li>
