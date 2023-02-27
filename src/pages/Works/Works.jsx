@@ -9,6 +9,8 @@ import {
   WorksLict,
   WorksItem,
   ImgBox,
+  WorkTitle,
+  WorkFilter,
   TextBox,
   StackText,
   LinksList,
@@ -20,40 +22,54 @@ const Works = () => {
       <StyledContainer>
         <h1>Works</h1>
         <WorksLict>
-          {works.map(({ id, title, description, stack, preview, links }) => (
-            <WorksItem key={id}>
-              <ImgBox>
-                <a href={links.site} target="_blank" rel="noopener noreferrer">
-                  <img src={preview} alt={title} width="450px" loading="lazy" />
-                </a>
-              </ImgBox>
-              <TextBox>
-                <h2>{title}</h2>
-                <StackText>[ {stack.join(', ')} ]</StackText>
-                <p>{description}</p>
-                <LinksList>
+          {works.map(
+            ({ id, title, filter, description, stack, preview, links }) => (
+              <WorksItem key={id}>
+                <ImgBox>
                   <a
                     href={links.site}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span aria-label="link to work page">
-                      <IoGlobeOutline />
-                    </span>
+                    <img
+                      src={preview}
+                      alt={title}
+                      width="450px"
+                      loading="lazy"
+                    />
                   </a>
-                  <a
-                    href={links.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span aria-label="GitHub link to repository">
-                      <IoLogoGithub />
-                    </span>
-                  </a>
-                </LinksList>
-              </TextBox>
-            </WorksItem>
-          ))}
+                </ImgBox>
+                <TextBox>
+                  <div>
+                    <WorkTitle>{title}</WorkTitle>
+                    <WorkFilter>{filter}</WorkFilter>
+                  </div>
+                  <StackText>[ {stack.join(', ')} ]</StackText>
+                  <p>{description}</p>
+                  <LinksList>
+                    <a
+                      href={links.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span aria-label="link to work page">
+                        <IoGlobeOutline />
+                      </span>
+                    </a>
+                    <a
+                      href={links.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span aria-label="GitHub link to repository">
+                        <IoLogoGithub />
+                      </span>
+                    </a>
+                  </LinksList>
+                </TextBox>
+              </WorksItem>
+            )
+          )}
         </WorksLict>
       </StyledContainer>
     </WorksSection>

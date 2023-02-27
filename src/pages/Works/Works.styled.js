@@ -97,18 +97,24 @@ export const TextBox = styled.div`
   flex-direction: column;
   gap: ${p => p.theme.space[3]};
 
-  & > h2 {
-    font-size: ${p => p.theme.fontSizes[6]};
-    line-height: 1.25;
-
-    @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
-      font-size: ${p => p.theme.fontSizes[7]};
-    }
-  }
-
   & > p {
     line-height: 1.5;
   }
+`;
+
+export const WorkTitle = styled.h2`
+  font-size: ${p => p.theme.fontSizes[6]};
+  line-height: 1.25;
+
+  @media screen and (min-width: ${p => p.theme.breakpoints[1]}) {
+    font-size: ${p => p.theme.fontSizes[7]};
+  }
+`;
+
+export const WorkFilter = styled.p`
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
 `;
 
 export const StackText = styled.p`
